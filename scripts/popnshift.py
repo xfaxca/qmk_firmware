@@ -7,7 +7,7 @@ import json
 from typing import *
 from itertools import chain
 
-ROWLEN = 15  # 15 is default for planck, preonic, xd75 grid. 
+ROWLEN = 15  # 15 is default for xd75, 12 for for planck, preonic, etc.
 FPATH = "./keyboards/xd75/keymaps/xfaxca_split/"  # Add filename here
 SHIFTS = [(14, 6)]  # Tuples of orig/dest or from/to for columnar pop and insert. 14 --> 7 moves far right col to center of board. 
 
