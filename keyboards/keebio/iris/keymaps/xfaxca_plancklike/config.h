@@ -23,7 +23,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // Mouse key speeds  settings
 #define MOUSEKEY_DELAY 10
 #define MOUSEKEY_INTERVAL 40
-#define MOUSEKEY_MAX_SPEED 13
+#define MOUSEKEY_MAX_SPEED 11
 #define MOUSEKEY_TIME_TO_MAX 10
 #define MOUSEKEY_WHEEL_INTERVAL 50
 #define MOUSEKEY_WHEEL_MAX_SPEED 18
