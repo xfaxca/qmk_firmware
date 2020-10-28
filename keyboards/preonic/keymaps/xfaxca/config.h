@@ -43,6 +43,17 @@
 // Note: following undef isn't really necessary on STM32, C6_AUDIO is AVR related
 #undef C6_AUDIO
 
+// Mousekey movement speed
+// Mouse key speeds  settings
+#define MOUSEKEY_DELAY 0
+#define MOUSEKEY_INTERVAL 2
+#define MOUSEKEY_MAX_SPEED 100
+#define MOUSEKEY_TIME_TO_MAX 5
+#define MOUSEKEY_WHEEL_INTERVAL 10
+#define MOUSEKEY_WHEEL_MAX_SPEED 50
+#define MOUSEKEY_WHEEL_TIME_TO_MAX 5
+#define MOUSEKEY_WHEEL_DELAY 0
+
 /* Debounce reduces chatter (unintended double-presses) - set 0 if debouncing is not needed */
 // #define DEBOUNCE 6
 
