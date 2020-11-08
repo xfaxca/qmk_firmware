@@ -37,3 +37,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define MOUSEKEY_WHEEL_TIME_TO_MAX 40
 #define MOUSEKEY_WHEEL_DELAY 0
 
+// Tapping settings
+#define PERMISSIVE_HOLD
+#define TAPPING_TERM 180
