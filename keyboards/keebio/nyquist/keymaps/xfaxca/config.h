@@ -30,3 +30,19 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define RGBLIGHT_SAT_STEP 8
 #define RGBLIGHT_VAL_STEP 8
 
+/* Mouse Settings */
+#define MOUSEKEY_DELAY 10
+#define MOUSEKEY_INTERVAL 40
+#define MOUSEKEY_MAX_SPEED 13
+#define MOUSEKEY_TIME_TO_MAX 10
+#define MOUSEKEY_WHEEL_INTERVAL 50
+#define MOUSEKEY_WHEEL_MAX_SPEED 18
+#define MOUSEKEY_WHEEL_TIME_TO_MAX 40
+#define MOUSEKEY_WHEEL_DELAY 0
+
+// Tapping settings
+#define PERMISSIVE_HOLD
+#define TAPPING_TERM 180
+
+// Unicode mode (e.g., OS-based input mode)
+#define UNICODE_SELECTED_MODES UC_LNX, UC_WIN, UC_WINC
