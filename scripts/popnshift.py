@@ -8,17 +8,25 @@ from typing import *
 from itertools import chain
 
 ROWLEN = 15  # 15 is default for xd75, 12 for for planck, preonic, etc.
-FPATH = "./keyboards/xd75/keymaps/xfaxca_split/"  # Add filename here
-SHIFTS = [(14, 6)]  # Tuples of orig/dest or from/to for columnar pop and insert. 14 --> 7 moves far right col to center of board. 
+# FPATH = "./keyboards/xd75/keymaps/xfaxca_split/"  # Add filename here
+FPATH = "./keyboards/xd75/keymaps/xfaxca_split/xfaxca_preonic-like_template.json"
+SHIFTS = [
+    (0, 8),
+    (0, 8),
+    (0, 8)
+]  # Tuples of orig/dest or from/to for columnar pop and insert. 14 --> 7 moves far right col to center of board. 
 
 def main():
     with open(FPATH,  'r') as f:
         d = json.loads(f.read())
     laycopy = d['layers'].copy()
+    new = None
     
     newlays = []
     for shifts in SHIFTS: 
-        new = pop_and_shift_layer(laycopy, orig=shifts[0], dest=shifts[1], rowlen=15) 
+        if new is None:
+            new = laycopy
+        new = pop_and_shift_layer(new, orig=shifts[0], dest=shifts[1], rowlen=15) 
         print('new list == old l ist', new == laycopy) 
         newlays = new
     
