@@ -40,8 +40,10 @@
 
 #define MUSIC_MAP
 #undef AUDIO_VOICES
-// Note: following undef isn't really necessary on STM32, C6_AUDIO is AVR related
-#undef C6_AUDIO
+#undef AUDIO_PIN
+#define AUDIO_PIN A5
+#define AUDIO_PIN_ALT A4
+#define AUDIO_PIN_ALT_AS_NEGATIVE
 
 /* Debounce reduces chatter (unintended double-presses) - set 0 if debouncing is not needed */
 // #define DEBOUNCE 6
@@ -94,9 +96,6 @@
  * MIDI options
  */
 
-/* Prevent use of disabled MIDI features in the keymap */
-//#define MIDI_ENABLE_STRICT 1
-
 /* enable basic MIDI features:
    - MIDI notes can be sent when in Music mode is on
 */
@@ -136,5 +135,7 @@
 #define MOUSEKEY_WHEEL_TIME_TO_MAX 65
 #define MOUSEKEY_WHEEL_DELAY 50
 
+// RGB Matrix support
+#define DRIVER_LED_TOTAL RGBLED_NUM
 
 #endif
