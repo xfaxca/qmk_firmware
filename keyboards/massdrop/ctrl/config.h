@@ -124,4 +124,15 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define RGB_MATRIX_LED_PROCESS_LIMIT 15
 #define RGB_MATRIX_LED_FLUSH_LIMIT 10
 
+// Mouse key speed defn
+// Mouse key settings
+#define MOUSEKEY_DELAY 50
+#define MOUSEKEY_INTERVAL 10
+#define MOUSEKEY_MAX_SPEED 15
+#define MOUSEKEY_TIME_TO_MAX 105
+#define MOUSEKEY_WHEEL_INTERVAL 10
+#define MOUSEKEY_WHEEL_MAX_SPEED 15
+#define MOUSEKEY_WHEEL_TIME_TO_MAX 65
+#define MOUSEKEY_WHEEL_DELAY 50
+
 #include "config_led.h"
